@@ -1,6 +1,7 @@
+@import "styles/utils";
 
 .button {
-  min-width: 315px;
+  width: 100%;
   min-height: 56px;
   border: none;
   cursor: pointer;
@@ -12,5 +13,11 @@
     color: var(--white-color);
     background: var(--primary-color);
     border-radius: 128px;
+
+    @include media(">desktop") {
+      &:hover {
+        background: var(--primary-gradient-color);
+      }
+    }
   }
 }
