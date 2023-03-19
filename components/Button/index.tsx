@@ -14,7 +14,9 @@ const Button: React.FC<IProps> = ({ variant, className, children, ...props }) =>
                 type={'button'}
                 {...props}
         >
-            {children}
+            <span className={styles.container}>
+                {children}
+            </span>
         </button>
     );
 };
