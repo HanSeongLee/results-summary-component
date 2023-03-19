@@ -8,8 +8,8 @@ body {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   font-size: 16px;
   line-height: 21px;
-  color: $natural-color;
-  background: $background-color;
+  color: var(--natural-color);
+  background: var(--background-color);
 
   @include media(">tablet") {
     font-size: 18px;
@@ -27,4 +27,28 @@ a {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+}
+
+html {
+  // --Colors--
+  // Base Colors
+  --white-color: #FFFFFF;
+  --red-color: #FF5555;
+  --yellow-color: #FFB21E;
+  --green-color: #00BB8F;
+  --blue-color: #1125D6;
+
+  // Primary Colors
+  --primary-color: #303B59;
+  --primary-gradient-color: linear-gradient(180deg, #7755FF 0%, #6943FF 0.01%, #2F2CE9 100%);
+
+  // Secondary Colors
+  --secondary-color: #303B59;
+  --secondary-gradient-color: linear-gradient(180deg, #4D21C9 0%, rgba(37, 33, 201, 0) 100%, rgba(37, 33, 201, 0) 100%);
+
+  // Natural Color
+  --natural-color: #CAC9FF;
+
+  // Background Color
+  --background-color: #ECF2FF;
 }
