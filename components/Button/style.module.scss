@@ -1,0 +1,16 @@
+
+.button {
+  min-width: 315px;
+  min-height: 56px;
+  border: none;
+  cursor: pointer;
+
+  &.primary {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 23px;
+    color: var(--white-color);
+    background: var(--primary-color);
+    border-radius: 128px;
+  }
+}
